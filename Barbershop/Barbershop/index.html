@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BARBER SHOP</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="shortcut icon" type="image/ico" href="Images/logo/1930.png" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-container" id="home">
+        <nav id="navbar">
+          <img src="images/logo/pngfuel.com.png" class="logo" />
+          <ul class="nav-links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+
+          <div class="respon-nav">
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >&times;</a
+              >
+              <a href="#home" onclick="closeNav()">HOME</a>
+              <a href="#about" onclick="closeNav()">ABOUT</a>
+              <a href="#services" onclick="closeNav()">SERVICES</a>
+              <a href="#contact" onclick="closeNav()">CONTACT</a>
+            </div>
+
+            <!-- Use any element to open the sidenav -->
+            <span onclick="openNav()">
+              <div class="hamburger" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div></div
+            ></span>
+          </div>
+        </nav>
+      </div>
+
+      <div class="header-container">
+        <header>
+          <div class="header-text">
+            <h1>Barber Shop</h1>
+            <button class="header-button">
+              <a href="#">Make an appointment</a>
+            </button>
+          </div>
+        </header>
+      </div>
+
+      <div class="about-container" id="about">
+        <h2 class="section-intro-text">About</h2>
+        <div class="about-section">
+          <img alt="barber" src="images/barber-1017457_1280.jpg" />
+          <p>
+            The History of the Barber Shop, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor
+            orci dapibus ultrices in iaculis nunc. <br /><br />Nam libero justo
+            laoreet sit amet cursus sit amet dictum. Arcu risus quis varius quam
+            quisque id diam vel quam. Consequat interdum varius sit
+            amet.Ultricies mi eget mauris pharetra et ultrices neque. Hac
+            habitasse platea dictumst quisque sagittis purus sit amet.
+          </p>
+        </div>
+      </div>
+
+      <div class="services-container" id="services">
+        <h3 class="section-intro-text">Services</h3>
+        <div class="service-grid-container">
+          <div class="pic-1"></div>
+          <div class="text-1">
+            <p class="services-main-text">Quality Fades</p>
+            <p class="services-text">
+              Ultricies mi eget mauris pharetra et ultrices neque. Hac habitasse
+              platea dictumst quisque sagittis purus sit amet. Nam libero justo
+              laoreet sit amet cursus sit amet dictum.
+            </p>
+            <div class="pricing">
+              <p>Prices:</p>
+              <ul>
+                <li>- Adults: $400 JMD</li>
+                <li>- Children: $250 JMD</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="text-2">
+            <p class="services-main-text">Industy leading Trims and Line ups</p>
+            <p class="services-text">
+              Ultricies mi eget mauris pharetra et ultrices neque. Hac habitasse
+              platea dictumst quisque sagittis purus sit amet. Nam libero justo
+              laoreet sit amet cursus sit amet dictum.
+            </p>
+            <div class="pricing">
+              <p>Prices:</p>
+              <ul>
+                <li>- Adults: $700 JMD</li>
+                <li>- Children: $500 JMD</li>
+              </ul>
+            </div>
+          </div>
+          <div class="pic-2"></div>
+
+          <div class="pic-3"></div>
+          <div class="text-3">
+            <p class="services-main-text">
+              Barbers for all hair types and textures
+            </p>
+            <p class="services-text">
+              Ultricies mi eget mauris pharetra et ultrices neque. Hac habitasse
+              platea dictumst quisque sagittis purus sit amet.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-container" id="contact">
+        <h4 class="section-intro-text">Contact</h4>
+        <div class="contact-grid-container">
+          <div class="contact-card">
+            <div class="contact-card-border">
+              <p>Location: St.James, Jamaica</p>
+              <p>Address: 163Lorem Avenue, Ipsum Drive</p>
+              <p>Hours: 9:00am - 10:00pm</p>
+              <p>
+                Email:
+                <a href="mailto:someone@yoursite.com">Barbershop@gmail.com</a>
+              </p>
+              <p>Phone: <a href="tel:1876-555-1234">1876-555-1234</a></p>
+            </div>
+          </div>
+
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe
+                width="1000"
+                height="500"
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=jamaica&t=&z=9&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-container">
+        <a href="#home" class="footer-link"
+          ><img src="images/logo/pngfuel2.com.png" class="footer-logo"
+        /></a>
+
+        <p class="footer-text">&copy; BarberShop</p>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
